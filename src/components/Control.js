@@ -1,4 +1,4 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component} from 'react';
 
 
 function createWarning(funcName){
@@ -16,9 +16,9 @@ class Control extends Component {
     render() {
         return(
             <div>
-              <button OnClick={this.props.onPlus}>+</button>
-              <button OnClick={this.props.onSubtract}>-</button>
-              <button OnClick={this.props.onRandonmizeColor}>Randomize Color</button>
+              <button onClick={this.props.onPlus}>+</button>
+              <button onClick={this.props.onSubtract}>-</button>
+              <button onClick={this.props.onRandonmizeColor}>Randomize Color</button>
             </div>
         );
     }
